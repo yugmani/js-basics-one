@@ -63,3 +63,35 @@ if (b) {
 // *** When b is placed in boolean context, the value of b becomes true.
 // *** Numbers, integers, and objects are what we call truthy values.
 // *** Truthy values are values that return true when they are placed in boolean contexts.
+
+// Refactor same code using 'Ternary Operator'
+let a;
+a ? console.log('this is a: ' + a) : console.log('a is empty');
+//a is empty
+
+// Here ( a ? ) ternary operator is checking if a is true do ... else (:) do ....
+
+a = 0;
+a ? console.log('this is a: ' + a) : console.log('a is empty');
+// a is empty
+
+a = NaN;
+a ? console.log('this is a: ' + a) : console.log('a is empty');
+// a is empty
+
+a = null;
+a ? console.log('this is a: ' + a) : console.log('a is empty');
+// a is empty
+
+a = [];
+a ? console.log('this is a: ' + a) : console.log('a is empty');
+// this is a:
+
+a = {};
+a ? console.log('this is a: ' + a) : console.log('a is empty');
+// this is a: [object Object]
+
+a = [{}];
+a ? console.log('this is a: ' + a) : console.log('a is empty');
+// this is a: [object Object]
+
