@@ -95,3 +95,34 @@ a = [{}];
 a ? console.log('this is a: ' + a) : console.log('a is empty');
 // this is a: [object Object]
 
+// Creating a straightforward function
+function isSumCorrect(x, y, sum) {
+  let newSum = x + y;
+  if (newSum == sum) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isSumCorrect(3, 6, 10)); //false
+
+// Refactor the function using ternary operaor
+function isSumRight(x, y, sum) {
+  let newSum = x + y;
+  return newSum == sum ? true : false;
+}
+
+console.log(isSumRight(4, 7, 10)); //false
+
+// Again refactor without wasting space in imemory for such a simple computation newSum = x + y;
+
+function isSumOkay(x, y, sum) {
+  return x + y == sum ? true : false;
+}
+
+console.log(isSumOkay(3, 7, 10)); //true
+
+//Takeaways
+// ** Make sure that your code is always readable and easy to understand.
+// ** There will be plenty of times you can shrink your code, using the process I just outlined, but that does not necessarily mean you should.
